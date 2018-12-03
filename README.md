@@ -1,6 +1,6 @@
-# stripe_payment
+# Settings
 
-A flutter plugin to integrate the Settings plugin for iOS and Android.
+A flutter ui design of the Settings for iOS and Android.
 
 <img src="/flutter.jpg">
 

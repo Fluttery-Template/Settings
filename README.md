@@ -1,8 +1,33 @@
-# settings
+# stripe_payment
 
-A new Flutter project.
+A flutter plugin to integrate the Settings plugin for iOS and Android.
 
-## Getting Started
+<img src="/flutter.jpg">
 
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
+## Usage
+
+To set your publishable key set:
+```dart
+import 'package:settings/components/CustomShowDialog.dart';
+import 'package:flutter/foundation.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+SettingsState createState() => new SettingsState();
+```
+from somewhere in your code, e.g. your main.dart file.
+
+To open the dialog:
+```dart
+ _MyFormState createState() => new _MyFormState(); //this is the Language Dialog
+});
+```
+
+## Android
+
+Please be aware that your main activity must extend from FlutterFragmentActivity. Otherwise the Android dialog would've looked very nasty.
+
+## TODO
+
+- [ ] better error handling
+- [ ] internationalization
+- [ ] more stripe library implementations?
